@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ticket Booking</title>
+</head>
+<body>
+  <h2>Online Ticket Booking</h2>
+  
+  <form>
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="event">Select Event:</label><br>
+    <select id="event" name="event" required>
+      <option value="">--Choose an Event--</option>
+      <option value="Concert">Concert</option>
+      <option value="Movie">Movie</option>
+      <option value="Sports">Sports</option>
+    </select><br><br>
+    
+    <label for="tickets">Number of Tickets:</label><br>
+    <input type="number" id="tickets" name="tickets" min="1" max="10" required><br><br>
+    
+    <label for="date">Date:</label><br>
+    <input type="date" id="date" name="date" required><br><br>
+    
+    <label for="payment">Payment Method:</label><br>
+    <select id="payment" name="payment" required>
+      <option value="">--Choose Payment--</option>
+      <option value="Card">Card</option>
+      <option value="UPI">UPI</option>
+      <option value="NetBanking">Net Banking</option>
+    </select><br><br>
+    
+    <input type="submit" value="Book Now">
+    <input type="reset" value="Reset">
+  </form>
+  
+</body>
+</html>
